@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt.pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        "A" de amigos
+    </title>
+    <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="cabelo">
+            <div class="c0">
+                <img src="camera.jpg" alt="">
+                <div class="texto">
+                    sobre o caminho
+                </div>
+            </div>
+
+            <div class="c1">
+                <img src="camera.jpg" alt="">
+                <div class="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="c2">
+                <img src="camera.jpg" alt="">
+                <div class="texto">
+                    <p>
+                        caminho
+                    </p>
+                </div>
+            </div>
+            <div class="c3">
+                <img src="camera.jpg" alt="">
+                <div class="texto">
+                    sobre o caminho
+                </div>
+            </div>
+            <div class="c4">
+                <img src="camera.jpg" alt="">
+                <div class="texto">
+                    sobre o caminho
+                </div>
+            </div>
+            <div class="c5">
+                <img src="camera.jpg" alt="">
+                <div class="texto">
+                    sobre o caminho
+                </div>
+            </div>
+            <div class="c6">
+                <img src="camera.jpg" alt="">
+                <div class="texto">
+                    sobre o caminho
+                </div>
+            </div>
+
+            <div class="c7">
+                <img src="camera.jpg" alt="">
+                <div class="texto">
+                    sobre o caminho
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="">
+                <div class="logo">A</div>
+                <span>amigos</span>
+            </a>
+            <div class="separador1">|</div>
+            <button>inicio</button>
+            <button>apoios</button>
+            <button>portfolios</button>
+
+        </header>
+        <label for="" class="lblPortfolios">PORTFOLIOS</label>
+        <section class="cards" id="card1">
+
+            <span>Planos feito em equipa</span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod autem sunt beatae ratione hic illum odit
+                repudiandae. Suscipit maiores velit et doloremque natus quis, tenetur expedita necessitatibus mollitia
+                facere? Doloribus?
+            </p>
+
+        </section>
+        <section class="sessao1">
+            <img src="equipa.png" alt="" class="imgEquipa">
+            <div>
+                <span>Planos feito em equipa</span>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati ipsum possimus ipsa
+                    consequuntur similique laboriosam quae tenetur quas veritatis quisquam maiores soluta architecto,
+                    optio dicta accusantium debitis libero explicabo.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="sessao2">
+            <img src="cerebros.jpeg" alt="" class="imgEquipa">
+            <div>
+                <span>Tecnologias de ultima geração</span>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati ipsum possimus ipsa
+                    consequuntur similique laboriosam quae tenetur quas veritatis quisquam maiores soluta architecto,
+                    optio dicta accusantium debitis libero explicabo.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="sessao3">
+            <img src="roxo.jpg" alt="" class="imgEquipa">
+            <div>
+                <span>Contacte-nos por</span>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati ipsum possimus ipsa
+                    consequuntur similique laboriosam quae tenetur quas veritatis quisquam maiores soluta architecto,
+                    optio dicta accusantium debitis libero explicabo.
+                </p>
+
+            </div>
+        </section>
+        <section class="sessao4">
+            <img src="olharJanela.jpg" alt="" class="imgEquipa">
+            <div>
+                <span>Contacte-nos por</span>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati ipsum possimus ipsa
+                    consequuntur similique laboriosam quae tenetur quas veritatis quisquam maiores soluta architecto,
+                    optio dicta accusantium debitis libero explicabo.
+                </p>
+
+            </div>
+        </section>
+        <section class="sessao5">
+            <!-- <img src="../imagens/planta.jpeg" alt="" class="imgEquipa"> -->
+            <div>
+                <span>Contacte-nos</span>
+                <p>
+                   Precisa de um "site"? 
+                   trabalhe connosco.
+                </p>
+
+            </div>
+        </section>
+
+
+        <section class="redeSocial">
+            <a href="#">
+                <img src="whatsAppBlack.png" alt="">
+
+            </a>
+            <a href="#">
+                <img src="facebookBlack.png" alt="">
+
+            </a>
+            <a href="#">
+                <img src="instablack.png" alt="">
+
+            </a>
+            <a href="#">
+                <img src="twitterBlack.png" alt="">
+
+            </a>
+
+
+        </section>
+
+        <footer>
+            <span class="versao">
+                <label for="" id="ano">ano</label>
+                <label for="" id="mes">mes</label>
+            </span>
+        </footer>
+    </div>
+</body>
+<script>
+    var data = new Date();
+    var ano = data.getFullYear();
+    var mes = data.getMonth();
+    var dataFormatada = `${mes}.${ano}`;
+    document.querySelector('.versao').innerHTML = dataFormatada;
+
+    var lblPortfolios = document.querySelector('.lblPortfolios');
+    var c4 = document.querySelector('.c4');
+    c4.addEventListener('mouseenter', () => {
+        console.log('passou o mouse');
+        lblPortfolios.style.opacity = '0';
+    })
+    c4.addEventListener('mouseout', () => {
+        console.log('retirou o mouse');
+        lblPortfolios.style.opacity = '1';
+    })
+
+</script>
+
+</html>
